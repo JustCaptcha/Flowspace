@@ -1,0 +1,33 @@
+@namespace "console";
+
+.consolePointer {
+    animation: pointerFade 1.5s infinite;
+}
+
+.consoleLog {
+    display: flex;
+}
+
+.consoleLog > .consolePointer {
+    /* margin-left: 1rem; */
+}
+
+.consoleLog > .consoleLogContent {
+    margin-left: 1rem;
+}
+
+.user {
+    color: crimson;
+}
+
+@keyframes pointerFade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

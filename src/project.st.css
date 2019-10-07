@@ -1,0 +1,16 @@
+@namespace "project";
+
+
+:vars {
+    color-primary: #3D1255;
+    color-secondary: #56286F;
+    color-text-default: #ccc;
+    color-link: #A95484;
+    padding-1: 2rem;
+    padding-2: 4rem;
+    margin-title: 2rem;
+}
+
+.title {
+    margin-bottom: value(margin-title);
+}

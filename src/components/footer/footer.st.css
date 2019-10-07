@@ -1,0 +1,23 @@
+@namespace "footer";
+:import {
+    -st-from: "../../project.st.css";
+    -st-named: color-secondary, color-link;
+}
+
+.root {
+    background-color: value(color-secondary);
+    color: #fff;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.root a {
+    color: value(color-link);
+}
+
+.reactLogo {
+    width: 5rem;
+    height: 5rem;
+}

@@ -1,0 +1,52 @@
+:import {
+  -st-from: "../../project.st.css";
+  -st-named: color-primary;
+}
+
+.root {
+  height: 8rem;
+  padding: 4rem;
+  background-color: value(color-primary);
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.digitflowLogo {
+  height: 5rem;
+  margin-right: 2rem;
+  animation: digitflowAnimation 18s linear infinite;
+}
+
+.stylableLogo {
+  height: 80px;
+  width: 55px;
+}
+
+.titleGroup {
+  color: #fff;
+  display: flex;
+}
+
+.titleGroup > :last-child {
+  /* padding: 1rem; */
+}
+
+.title {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding-right: 1.5rem;
+}
+
+@keyframes digitflowAnimation {
+  0% {
+    transform: rotate(0deg) scale(1.0);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.0);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.0);
+  }
+}
