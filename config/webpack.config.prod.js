@@ -13,6 +13,7 @@ const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
 const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin');
+const Dotenv = require('dotenv-webpack');
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // It requires a trailing slash, or the file assets will get an incorrect path.
@@ -137,7 +138,7 @@ module.exports = {
     // for React Native Web.
     extensions: ['.ts', '.tsx', '.mjs', '.web.js', '.js', '.json'],
     alias: {
-      
+
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',
@@ -212,6 +213,7 @@ module.exports = {
   },
   plugins: [
     // Generates an `index.html` file with the <script> injected.
+    new Dotenv(),
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.appHtml,

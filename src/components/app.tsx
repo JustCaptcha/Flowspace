@@ -10,7 +10,7 @@ import { ThemeProvider } from '@material-ui/styles';
 
 const cache = new InMemoryCache();
 const link = new HttpLink({
-    uri: 'http://localhost:4000/graphql',
+    uri: process.env.APOLLO_CLIENT_URI,
     credentials: 'same-origin'
 })
 
