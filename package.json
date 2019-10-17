@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@types/react": "16",
-    "@types/react-dom": "16"
+    "@types/react-dom": "16",
+    "dotenv-webpack": "^1.7.0"
   }
 }
