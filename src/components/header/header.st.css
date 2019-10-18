@@ -7,21 +7,16 @@
   height: 8rem;
   padding: 4rem;
   background-color: value(color-primary);
-  display: flex;
+  /* display: flex; */
   /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .digitflowLogo {
   height: 5rem;
   margin-right: 2rem;
   animation: digitflowAnimation 18s linear infinite;
-}
-
-.stylableLogo {
-  height: 80px;
-  width: 55px;
 }
 
 .titleGroup {
