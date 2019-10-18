@@ -213,7 +213,9 @@ module.exports = {
   },
   plugins: [
     // Generates an `index.html` file with the <script> injected.
-    new Dotenv(),
+    new Dotenv({
+      path: path.resolve(__dirname, '../prod.env'),
+    }),
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.appHtml,
