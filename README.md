@@ -2,7 +2,7 @@
 
 A modern react boilerplate.
 
-## What it use
+## What it uses
 
 * Typescript/JavaScript
 * React
